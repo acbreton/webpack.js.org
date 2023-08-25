@@ -96,7 +96,7 @@ Now let's make sure we have something to debug, so let's create an error in our 
 ```diff
  export default function printMe() {
 -  console.log('I get called from print.js!');
-+  cosnole.log('I get called from print.js!');
++  console.log('I get called from print.js!');
  }
 ```
 
@@ -119,7 +119,7 @@ webpack 5.4.0 compiled successfully in 706 ms
 Now open the resulting `index.html` file in your browser. Click the button and look in your console where the error is displayed. The error should say something like this:
 
 ```bash
-Uncaught ReferenceError: cosnole is not defined
+Uncaught ReferenceError: console is not defined
    at HTMLButtonElement.printMe (print.js:2)
 ```
 
@@ -181,7 +181,7 @@ Now, while webpack is watching your files, let's remove the error we introduced 
 
 ```diff
  export default function printMe() {
--  cosnole.log('I get called from print.js!');
+-  console.log('I get called from print.js!');
 +  console.log('I get called from print.js!');
  }
 ```
